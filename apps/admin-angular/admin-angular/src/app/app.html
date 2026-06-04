@@ -10,6 +10,7 @@
       <ul class="navbar-nav" role="list">
           <li><a routerLink="/" routerLinkActive="active" class="active" aria-current="page">Inicio</a></li>
           <li><a routerLink="/cursos" >Cursos</a></li>
+          <li><a routerLink="/admin-dashboard" >Dashboard</a></li>
           <li><a routerLink="/validar">Validar</a></li>
           <li><a routerLink="/usuario">Usuario</a></li>
       </ul>
@@ -27,6 +28,7 @@
   <div class="mobile-nav" id="mobile-nav">
     <a routerLink="/" routerLinkActive="active" class="active" aria-current="page">Inicio</a>
     <a routerLink="/cursos" >Cursos</a>
+    <a routerLink="/admin-dashboard" >Dashboard</a>
     <a routerLink="/validar">Validar</a>
     <a routerLink="/usuario">usuario</a>
   </div>
@@ -47,8 +49,7 @@
           <div class="sidebar-title">Panel de control</div>
         </div>
         <nav class="sidebar-nav" aria-label="Navegación administrativa">
-          <a href="admin-dashboard.html" class="active" aria-current="page"><span class="nav-icon" aria-hidden="true">📊</span> Dashboard</a>
-
+          <a routerLink="/admin-dashboard" class="active" aria-current="page"><span class="nav-icon" aria-hidden="true">📊</span> Dashboard</a>
           <div class="sidebar-section-label">Gestión académica</div>
           <a routerLink="/cursos" ><span class="nav-icon" aria-hidden="true">📚</span> Cursos<span class="sidebar-badge">48</span></a>
           <a href="admin-estudiantes.html"><span class="nav-icon" aria-hidden="true">👥</span> Estudiantes<span class="sidebar-badge">1240</span></a>
